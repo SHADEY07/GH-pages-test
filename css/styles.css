@@ -1,0 +1,79 @@
+/* Estilos básicos de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #004f92;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px;
+}
+
+/* Contenedor de los viajes */
+.bus-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para cada item de bus */
+.bus-item {
+    display: flex;
+    align-items: flex-start; /* Alineamos el contenido de cada viaje */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la imagen dentro de cada item */
+.bus-item img {
+    width: 150px; /* Asegura que la imagen no sea demasiado grande */
+    height: 100px; /* Definir la altura de la imagen */
+    object-fit: cover; /* Mantiene las proporciones sin deformar la imagen */
+    border-radius: 8px;
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+/* Información del viaje */
+.bus-info {
+    flex-grow: 1;
+}
+
+/* Título del viaje */
+.bus-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Descripción del viaje */
+.bus-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilo del botón de compra */
+.btn-buy {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px; /* Un poco de espacio encima del botón */
+}
+
+.btn-buy:hover {
+    background-color: #ff4a3b;
+}
+

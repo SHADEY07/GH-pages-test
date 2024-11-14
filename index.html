@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horarios de Viajes en Bus</title>
+    <style>
+        /* Estilos básicos de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #004f92;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        /* Contenedor de los viajes */
+        .bus-schedule {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Estilos para cada item de bus */
+        .bus-item {
+            display: flex;
+            align-items: flex-start; /* Alineamos el contenido de cada viaje */
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo de la imagen dentro de cada item */
+        .bus-item img {
+            width: 150px; /* Asegura que la imagen no sea demasiado grande */
+            height: 100px; /* Definir la altura de la imagen */
+            object-fit: cover; /* Mantiene las proporciones sin deformar la imagen */
+            border-radius: 8px;
+            margin-right: 20px; /* Espacio entre la imagen y el contenido */
+        }
+
+        /* Información del viaje */
+        .bus-info {
+            flex-grow: 1;
+        }
+
+        /* Título del viaje */
+        .bus-info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Descripción del viaje */
+        .bus-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Estilo del botón de compra */
+        .btn-buy {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px; /* Un poco de espacio encima del botón */
+        }
+
+        .btn-buy:hover {
+            background-color: #ff4a3b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Horarios de Viajes en Bus</h1>
+    <p>De 8:00 AM a 12:00 PM</p>
+</header>
+
+<section>
+    <div class="bus-schedule">
+        <div class="bus-item">
+            <img src="./img/costa.jpg" alt="Bus 8 AM">
+            <div class="bus-info">
+                <h3>8:00 AM - Viaje a la Costa</h3>
+                <p>Un viaje cómodo y rápido hacia la costa. Disfruta del paisaje mientras te diriges al mar.</p>
+                <button class="btn-buy">Comprar Ticket</button>
+            </div>
+        </div>
+        
+        <div class="bus-item">
+            <img src="./img/montañas.jpg" alt="Bus 9 AM">
+            <div class="bus-info">
+                <h3>9:00 AM - Viaje a las Montañas</h3>
+                <p>Disfruta del aire fresco y las vistas panorámicas en este viaje a las montañas.</p>
+                <button class="btn-buy">Comprar Ticket</button>
+            </div>
+        </div>
+        
+        <div class="bus-item">
+            <img src="./img/centro.jpg" alt="Bus 10 AM">
+            <div class="bus-info">
+                <h3>10:00 AM - Viaje al Centro Histórico</h3>
+                <p>Recorre los principales puntos turísticos de la ciudad con este viaje al centro histórico.</p>
+                <button class="btn-buy">Comprar Ticket</button>
+            </div>
+        </div>
+        
+        <div class="bus-item">
+            <img src="./img/playa.jpg" alt="Bus 11 AM">
+            <div class="bus-info">
+                <h3>11:00 AM - Viaje a la Playa</h3>
+                <p>Un viaje perfecto para relajarte en las hermosas playas cercanas.</p>
+                <button class="btn-buy">Comprar Ticket</button>
+            </div>
+        </div>
+        
+        <div class="bus-item">
+            <img src="./img/selva.jpg" alt="Bus 12 PM">
+            <div class="bus-info">
+                <h3>12:00 PM - Viaje a la Selva</h3>
+                <p>Aventura y naturaleza en este viaje hacia la selva tropical.</p>
+                <button class="btn-buy">Comprar Ticket</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
